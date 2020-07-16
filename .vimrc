@@ -54,7 +54,12 @@ map <C-a> <Home>i
 
 imap <C-f> <Right>
 imap <C-b> <Left>
+imap <C-p> <Up>
+imap <C-n> <Down>
+
+" Delete character
 imap <C-d> <Del>
+imap <C-h> <BS>
 
 " Word
 imap <M-f> <esc>ea
