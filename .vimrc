@@ -31,7 +31,6 @@ filetype plugin indent on    " required
 let g:gruvbox_contrast_dark = 'hard'
 syntax on
 colorscheme gruvbox
-"highlight normal ctermfg=grey ctermbg=black"
 
 set expandtab ts=4 sw=4 ai
 set smarttab
@@ -80,7 +79,10 @@ autocmd BufWritePre * %s/\s\+$//e
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
+inoremap < <><left>
 inoremap [ []<left>
+inoremap [<CR> [<CR>]<ESC>O
+inoremap [;<CR> [<CR>];<ESC>O
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
