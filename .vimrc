@@ -57,15 +57,17 @@ imap <C-b> <Left>
 imap <C-d> <Del>
 
 " Word
-imap <M-f> <C-Right>
-imap <M-b> <C-Left>
-map <M-f> <C-Right><Left>
-map <M-b> <C-Left>
+imap <M-f> <esc>ea
+imap <M-b> <esc>bi
+map <M-f> e
+map <M-b> b
 imap <M-a> <esc>(i
 imap <M-e> <esc>)i
 
+" Delete word
 imap <M-BS> <C-W>
 imap <M-Del> <C-W>
+imap <M-d> <C-o>de
 
 " Automatically removing all trailing whitespace - https://vim.fandom.com/wiki/Remove_unwanted_spaces
 autocmd BufWritePre * %s/\s\+$//e
