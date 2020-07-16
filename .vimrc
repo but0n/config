@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'morhetz/gruvbox'
 Plugin 'tpope/vim-commentary'
+Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,6 +57,9 @@ imap <C-b> <Left>
 imap <C-p> <Up>
 imap <C-n> <Down>
 
+map <C-f> <Right>
+map <C-b> <Left>
+
 " Delete character
 imap <C-d> <Del>
 imap <C-h> <BS>
@@ -67,6 +71,8 @@ map <M-f> e
 map <M-b> b
 imap <M-a> <esc>(i
 imap <M-e> <esc>)i
+map <M-a> (
+map <M-e> )
 
 " Delete word
 imap <M-BS> <C-W>
