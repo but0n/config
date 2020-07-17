@@ -13,6 +13,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'morhetz/gruvbox'
 Plugin 'tpope/vim-commentary'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'luochen1990/rainbow'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -30,6 +31,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 let g:gruvbox_contrast_dark = 'hard'
+let g:rainbow_active = 1
 syntax on
 colorscheme gruvbox
 
